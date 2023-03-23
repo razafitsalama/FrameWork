@@ -5,6 +5,7 @@
  */
 package etu2257.framework.servlet;
 
+import etu2257.framework.Mapping;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -19,6 +20,16 @@ import java.util.HashMap;
  * @author ITU
  */
 public class FrontServlet extends HttpServlet {
+    HashMap<String, Mapping> mappingUrls;
+
+    public HashMap<String, Mapping> getMappingUrls() {
+        return mappingUrls;
+    }
+
+    public void setMappingUrls(HashMap<String, Mapping> mappingUrls) {
+        this.mappingUrls = mappingUrls;
+    }
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
