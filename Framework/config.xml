@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+     <database>
+        <url>jdbc:postgresql://localhost:5432/webdyn</url>
+        <user>postgres</user>
+        <pass>nyantsa</pass>
+    </database>
+    <packe>
+        <package-listening>objet</package-listening>
+        <df>fdsfd</df>
+    </packe>
+</config>
